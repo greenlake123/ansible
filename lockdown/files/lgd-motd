@@ -1,0 +1,9 @@
+echo -e "
+\033[0;31m
+LDG Security Warning!
+
+\033[0;33m
+Hello. This server belongs to LGD. Authorised access only. If you're not authorised to be be here then you will be hunted, found, and told off really badly. Seriously. You won't like it. You should log off now and save yourself years of being on our naughty list.
+
+\033[0m
+"

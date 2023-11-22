@@ -1,0 +1,19 @@
+##################################################
+# Example playbook: We would use this to lockdown 
+# a new server. For this test we'll simply set a 
+# custom motd file
+##################################################
+---
+- hosts: all
+  become: true
+  vars_files:
+    - vars/default.yml
+
+  tasks:
+    - name: Set up Apache virtualhost
+      ansible.builtin.copy:
+        src: "files/lgd-motd
+        dest: "/etc/update-motd.d/99-lgd-motd
+        owner: root
+        group: root
+        mode: '0645'
